@@ -1,0 +1,2 @@
+# BasicAlgos
+Basic algorithmic exercises
