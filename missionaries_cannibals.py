@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Aug 24 18:09:23 2020
-
-@author: sebastien.delandtshe
-"""
+# Missionaries and Cannibals
 
 # From Wikipedia:
 # In the missionaries and cannibals problem, three missionaries and three cannibals 
