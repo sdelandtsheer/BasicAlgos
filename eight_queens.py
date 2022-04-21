@@ -28,16 +28,16 @@ for solution in solutions:
 
 
 ###########################
-# Solution 2: recursive bfs
+# Solution 2: recursive bfs in a generator
 
 
-def queens(x, i, a, b, c):
-    if a:  # a is not empty
-        for j in a:
-            if i + j not in b and i - j not in c:
-                yield from queens(x + [j], i + 1, a - {j}, b | {i + j}, c | {i - j})
+def queens(sol, r, queens_to_place, a1, a2):
+    if queens_to_place:  # a is not empty
+        for c in queens_to_place:
+            if r + c not in a1 and r - c not in a2:
+                yield from queens(sol + [c], i + 1, queens_to_place - {c}, a1 | {r + c}, a2 | {r - c})
     else:
-        yield x
+        yield sol
 
 
 for solution in queens([], 0, set(range(8)), set(), set()):
