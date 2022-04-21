@@ -18,4 +18,4 @@ Comments, alternative solutions, hacks, etc... welcome
 - Neural networks from scratch
 - Tic-tac-toe (minimax)
 - Connect-Four (minimax + alpha/beta pruning)
-
+- MCMCMC estimator (Metropolis-coupled Markov Chain Monte-Carlo)
