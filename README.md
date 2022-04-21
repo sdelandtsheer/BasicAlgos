@@ -7,11 +7,11 @@ Comments, alternative solutions, hacks, etc... welcome
 
 ## Contents:
 
-- Missionaries and Cannibals (breath-first search)
+- Missionaries and Cannibals (stochastic and breath-first search): ok
 - Fibonacci (multiple techniques) 
 - Towers of Hanoi
-- Eight queens
-- Dijkstra's algorithm
+- Eight queens: ok
+- Dijkstra's algorithm: ok (single target)
 - Genetic algorithm + traveling salesman
 - Genetic algorithm + photo recomposition
 - K-means clustering + shoulder k-choice
