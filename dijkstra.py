@@ -19,26 +19,22 @@ def dijkstra(graph: np.array = None, source_idx: int = None, target_idx: int = N
                 u = q
         queue.remove(u)
 
-        u_neighbors = np.argwhere(graph[u, :] < np.inf)
+        u_neighbors = np.argwhere(graph[u, :] < np.inf)  # neighbor of u with smallest cost
         for v in u_neighbors:
-            alt = dist[u] + graph[u, v]
-            if alt < dist[v]:
+            alt = dist[u] + graph[u, v]  # add the new distance
+            if alt < dist[v]:  # update distance
                 dist[v] = alt
                 prev[v] = u
 
     # return the path
     shortest_path = []
     temp = target_idx
-    if prev[temp] < np.inf:
+    if prev[temp] < np.inf:  # if node is reachable
         shortest_path.append(temp)
         while temp != source_idx:
-            print(shortest_path)
-            print(prev)
-            print(temp)
             n = int(prev[temp])
             shortest_path.append(n)
             temp = n
-            print(n)
 
     return shortest_path[::-1], dist[target_idx]
 
