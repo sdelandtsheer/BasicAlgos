@@ -10,11 +10,11 @@ Comments, alternative solutions, hacks, etc... welcome
 - Missionaries and Cannibals (stochastic and breath-first search): ok
 - Fibonacci (multiple techniques): ok
 - Calculating pi with Leibniz: ok
-- Towers of Hanoi
+- Towers of Hanoi: ok (recursive)
 - Eight queens: ok
 - Dijkstra's algorithm (single target): ok
 - Genetic algorithm + traveling salesman
-- Genetic algorithm + photo recomposition
+- Genetic algorithm + photo mosaic
 - K-means clustering + shoulder k-choice
 - Neural networks from scratch
 - Tic-tac-toe (minimax)
