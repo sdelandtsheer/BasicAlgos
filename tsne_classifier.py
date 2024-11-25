@@ -34,8 +34,8 @@ print(f"Loaded MNIST dataset with {x.shape[0]} samples.")
 
 # Split the dataset into training and test sets
 print("Step 2: Splitting dataset into training and test sets...")
-x_train, x_test = x[:60000], x[60000:]
-y_train, y_test = y[:60000], y[60000:]
+x_train, x_test = x[:60000], x[60000:63350]
+y_train, y_test = y[:60000], y[60000:63350]
 print(f"Training set size: {x_train.shape[0]} samples, Test set size: {x_test.shape[0]} samples.")
 
 # Convert to NumPy arrays if needed
